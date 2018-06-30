@@ -1,0 +1,35 @@
+@function strip-unit($value) {
+	@return $value / ($value * 0 + 1);
+}
+
+@mixin vs($min-vp, $min-length, $max-vp, $max-length, $property: "font-size") {
+	$u1: unit($min-vp);
+	$u2: unit($min-length);
+	$u3: unit($max-vp);
+	$u4: unit($max-length);
+
+	$a: strip-unit($min-vp);
+	$b: strip-unit($min-length);
+	$c: strip-unit($max-vp);
+	$d: strip-unit($max-length);
+
+	@if $u1 == $u3 and $u2 == $u4 {
+
+		$x: ($d - $b) / ($c - $a) * 100vw;
+		$y: ($c * $b - $a * $d) / ($c - $a) * 1#{$u2};
+
+		#{$property}: $min-length;
+
+		@media screen and (min-width: $min-vp) {
+			@if $y == 0 {
+				#{$property}: $x;
+			} @else {
+				#{$property}: calc(#{$x} + #{$y});
+			}
+		}
+
+		@media screen and (min-width: $max-vp) {
+			#{$property}: $max-length;
+		}
+	}
+}
