@@ -74,4 +74,4 @@ This will be compiled to:
 
 ## License
 
-MIT
+[MIT License](https://github.com/ixkaito/viewportsize/blob/master/LICENSE)
