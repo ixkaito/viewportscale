@@ -1,4 +1,4 @@
-# ViewportSize
+# ViewportScale
 
 Linearly scale length from a minimum number at a smaller viewport to a maximum at a larger viewport.
 
