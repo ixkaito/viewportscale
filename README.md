@@ -33,7 +33,7 @@ h1 {
 
 @media screen and (min-width: 320px) {
     h1 {
-        font-size: calc(3.75vw + 12px);
+        font-size: calc(2.5vw + 24px);
     }
 }
 
