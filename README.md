@@ -4,10 +4,10 @@ Linearly scale length from a minimum number at a smaller viewport to a maximum a
 
 ## How to Use
 
-1. Import `_viewportsize.scss` in your sass file:
+1. Import `_viewportscale.scss` in your sass file:
 
    ```scss
-   @import "viewportsize";
+   @import "viewportscale";
    ```
    
 2. Now you can use the `vs` mixin like this:
