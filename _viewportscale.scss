@@ -1,8 +1,13 @@
+/**
+ * ViewportScale v0.2
+ * Copyright (c) 2018 Kite
+ * MIT License
+ */
 @function strip-unit($value) {
 	@return $value / ($value * 0 + 1);
 }
 
-@mixin vs($min-vp, $min-length, $max-vp, $max-length, $property: "font-size") {
+@mixin vs($property, $min-vp, $min-length, $max-vp, $max-length) {
 	$u1: unit($min-vp);
 	$u2: unit($min-length);
 	$u3: unit($max-vp);
