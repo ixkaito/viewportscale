@@ -1,6 +1,6 @@
 # ViewportScale
 
-Linearly scale length from a minimum number at a smaller viewport to a maximum at a larger viewport.
+To linearly scale font-size, margin, padding, etc. across viewport widths.
 
 ## How to Use
 
