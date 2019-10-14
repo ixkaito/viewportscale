@@ -1,6 +1,8 @@
-# ViewportScale
+<p align="center"><img src="https://ixkaito.github.io/viewportscaler/img/logo.b5863405.svg" alt="ViewportScaler Logo"></p>
 
-To linearly scale font-size, margin, padding, etc. across viewport widths.
+<h1 align="center">ViewportScale</h1>
+
+<p align="center">To linearly scale font-size, margin, padding, etc. across viewport widths.</p>
 
 ## How to Use
 
